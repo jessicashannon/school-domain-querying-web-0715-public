@@ -89,7 +89,7 @@ describe Course do
       dot_net.name = "Advanced .NET Programming"
       
       dot_net.insert
-
+      # binding.pry
       dot_net_from_db = Course.find_by_name("Advanced .NET Programming")
       expect(dot_net_from_db.name).to eq("Advanced .NET Programming")
       expect(dot_net_from_db).to be_an_instance_of(Course)
